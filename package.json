@@ -1,0 +1,50 @@
+{
+  "name": "koa2-vue2-wechat-enterprise",
+  "version": "0.1.0",
+  "description": "koa2,vue2,企业微信,种子项目",
+  "main": "bin/www",
+  "scripts": {
+    "start": "nodemon bin/www",
+    "dev": "./node_modules/.bin/nodemon bin/www",
+    "prd": "pm2 start bin/www",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --harmony --reporter spec ./test/test-*.js --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yaonie084/koa2-vue2-wechat-enterprise.git"
+  },
+  "keywords": [
+    "weixin",
+    "wechat",
+    "enterprise",
+    "koa2",
+    "vue2"
+  ],
+  "dependencies": {
+    "debug": "^2.6.3",
+    "kcors": "^2.2.1",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^3.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^2.0.1",
+    "koa-onerror": "^1.2.1",
+    "koa-router": "^7.1.1",
+    "mocha": "^5.0.0",
+    "moment": "^2.18.1",
+    "mysql": "^2.14.1",
+    "pug": "^2.0.0-rc.1",
+    "qrcode": "^1.2.0",
+    "random-js": "^1.0.8",
+    "redis": "^2.8.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "sequelize": "^3.30.4",
+    "should": "^13.2.1",
+    "supertest": "^3.0.0",
+    "then-redis": "^2.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
+}
